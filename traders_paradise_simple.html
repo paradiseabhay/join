@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traders Paradise | Abhay Patil</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 32px 16px;
+      background: #080808;
+      color: #f2f2f2;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      width: 100%;
+      max-width: 620px;
+      padding: 38px 28px;
+      text-align: center;
+      border: 1px solid #8f7438;
+      border-radius: 12px;
+      background: #111111;
+    }
+    .logo {
+      display: block;
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      margin: 0 auto 24px;
+      border-radius: 22px;
+    }
+    h1 {
+      margin: 0 0 10px;
+      color: #d7b45c;
+      font-size: clamp(28px, 6vw, 40px);
+      letter-spacing: 1px;
+    }
+    .owner {
+      margin-bottom: 22px;
+      color: #c9c9c9;
+      font-size: 14px;
+    }
+    .description {
+      margin: 0 auto 26px;
+      max-width: 480px;
+      color: #d0d0d0;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    .features {
+      margin: 0 auto 28px;
+      padding: 0;
+      max-width: 430px;
+      list-style: none;
+      text-align: left;
+    }
+    .features li {
+      padding: 12px 4px;
+      border-bottom: 1px solid #292929;
+      color: #e5e5e5;
+      font-size: 14px;
+    }
+    .features li::before {
+      content: "•";
+      margin-right: 11px;
+      color: #d7b45c;
+    }
+    .join {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 6px;
+      background: #c5a34f;
+      color: #101010;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .join:hover { background: #d7b45c; }
+    .disclaimer {
+      margin-top: 28px;
+      padding-top: 18px;
+      border-top: 1px solid #292929;
+      color: #999999;
+      font-size: 11px;
+      line-height: 1.6;
+      text-align: left;
+    }
+    footer {
+      margin-top: 20px;
+      color: #777777;
+      font-size: 11px;
+    }
+    @media (max-width: 480px) {
+      .container { padding: 30px 18px; }
+      .logo { width: 120px; height: 120px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <img class="logo" src="data:image/webp;base64,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" alt="Traders Paradise logo">
+    <h1>TRADERS PARADISE</h1>
+    <div class="owner">Owner: Abhay Patil</div>
+
+    <p class="description">
+      Trading education and market learning community.
+      Learn market concepts, trading strategies and risk management.
+    </p>
+
+    <ul class="features">
+      <li>Intraday Trading Education</li>
+      <li>Educational Market Insights</li>
+      <li>Options Trading Learning</li>
+      <li>Beginner-Friendly Learning Support</li>
+    </ul>
+
+    <!-- Replace YOUR_TELEGRAM_LINK with your actual Telegram channel link -->
+    <a class="join" href="https://t.me/YOUR_TELEGRAM_LINK" target="_blank" rel="noopener">
+      JOIN TELEGRAM CHANNEL
+    </a>
+
+    <div class="disclaimer">
+      <strong>Disclaimer:</strong>
+      This page and community are for educational and informational purposes only.
+      Nothing shared should be considered financial, investment, or trading advice.
+      Trading involves risk. Please do your own research before making financial decisions.
+    </div>
+
+    <footer>© 2026 Traders Paradise · Abhay Patil</footer>
+  </main>
+</body>
+</html>
